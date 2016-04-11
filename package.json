@@ -1,8 +1,13 @@
 {
-  "name": "your-app-name",
+  "name": "cozysdk-client-tuto",
+  "version": "0.0.1",
+  "description": "An application to get you started with serverless web app development and Cozy.",
   "cozy-type": "static",
-  "cozy-displayName": "Your App's Name",
-  "version": "1.0.0",
-  "description": "Your app's description",
-  "icon-path": "main_icon.png"
+  "cozy-displayName": "Serverless app example",
+  "icon-path": "main_icon.png",
+  "cozy-permissions": {
+    "Contact": {
+      "description": "To easily find your contact when talking about someone."
+    }
+  }
 }
