@@ -1,0 +1,29 @@
+<h1 style="text-align:center">The Contact App <small>Cozy Cloud</small></h1>
+
+<form>
+    <label>Name:</label>
+    <input type="text" ng-model="contactCtrl.contact.n">
+    <input type="submit" ng-click="contactCtrl.send(contactCtrl.contact)" value="Create">
+</form>
+
+<hr>
+<label>Search: <input type="text" ng-model="searchText"></label>
+
+<p ng-show="contact.error">{{contact.error}}</p>
+<table align="center">
+  	<tr>
+        <td>Name</td>
+        <td>Actions</td>
+    </tr>
+    <tr ng-repeat="contact in contactCtrl.contacts | filter:searchText track by $index">
+
+        <td>
+          <input type="text" ng-model="contact.key">
+        </td>
+        <td>
+          <button ng-click="contactCtrl.update(contact.id, contact)">Update</button>
+            <button ng-click="contactCtrl.destroy(contact.id)">Destroy</button>
+        </td>
+    </tr>
+</table>
+Status API Training Shop Blog About
