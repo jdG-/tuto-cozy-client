@@ -1,0 +1,8 @@
+{
+  "name": "your-app-name",
+  "cozy-type": "static",
+  "cozy-displayName": "Your App's Name",
+  "version": "1.0.0",
+  "description": "Your app's description",
+  "icon-path": "main_icon.png"
+}
